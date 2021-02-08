@@ -5,15 +5,25 @@ Put TextLayers on Image
 
 ## How to use
 ```Swift
-let testLayers: [BannerTextLayer] = [BannerTextLayer(text: "Test", position: .topLeftTitle),
+// create new textLayers
+let textLayers: [BannerTextLayer] = [BannerTextLayer(text: "Test", position: .topLeftTitle),
                                     BannerTextLayer(text: "Test", position: .topLeftValue),
                                     BannerTextLayer(text: "Test", position: .topRightTitle),
                                     BannerTextLayer(text: "Test", position: .topRightValue)]
                                     
-let backgroundImage = UIImage(named: "turm")                                   
-let runBanner = RunBanner(whichPhoto: backgroundImage)
-runBanner.textLayers = testLayers
+// get background image                                    
+let backgroundImage = UIImage(named: "turm")    
 
+// initalize new runBanner
+let runBanner = RunBanner(whichPhoto: backgroundImage)
+
+// put text layers on the image
+runBanner.textLayers = textLayers
+
+// if you want to delete parts
+runBanner.delete(position: .topLeftTitle)
+
+// get final image
 let finalImage = runBanner.get()
 ```
 
