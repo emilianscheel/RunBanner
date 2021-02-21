@@ -1,5 +1,5 @@
 # RunBanner
-Put TextLayers on Image
+Put easily custom `TextLayers` on any `UIImage` you want. Just download the source code from files.
 
 <img src="https://github.com/emilianscheel/RunBanner/blob/main/IMG_F1075BECA80E-1.jpeg" width="250">
 
